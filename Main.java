@@ -18,7 +18,7 @@ public class Main extends GraphicsProgram
     private static int             PADDLE_WIDTH     = 150;
     private static Color           BALL_COLOR       = Color.BLACK;
     private static int             ROW_GAP          = 0;
-    private static boolean         CHEAT            = true;
+    private static boolean         CHEAT            = false;
     private static RandomGenerator rgen             = new RandomGenerator();
     private static boolean         gameActive       = false;
     private static int             paddleX;
