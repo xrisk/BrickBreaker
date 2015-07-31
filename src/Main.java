@@ -1,12 +1,15 @@
 import java.awt.Color;
 import java.awt.event.MouseEvent;
-
+import java.awt.EventQueue;
+import javax.swing.*;
 import acm.graphics.*;
 import acm.program.*;
 import acm.util.RandomGenerator;
 import static java.awt.Color.*;
+import java.awt.event.*;
+import java.awt.*;
 
-public class Main extends GraphicsProgram
+class BrickBreaker extends GraphicsProgram // this is an applet in disguise
 {
     private static final long      serialVersionUID = 1L;
     private static int             BRICK_WIDTH      = 40;
@@ -32,7 +35,7 @@ public class Main extends GraphicsProgram
         
 
         int halfHeight = (int) (WINDOW_HEIGHT * 0.5);
-        this.setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
+        this.setSize(WINDOW_WIDTH, WINDOW_HEIGHT+50);
         // set the size of the window to predefined constants
         this.setBackground(rgen.nextColor());
         int bricksLeft = 0;
@@ -193,4 +196,17 @@ public class Main extends GraphicsProgram
             paddleX = evt.getX();
         }
     }
+
+
+
+  
+}
+
+class Main  {
+
+  public static void main(String args[])
+  {
+    BrickBreaker b = new BrickBreaker();
+    b.start(args);
+  }
 }
