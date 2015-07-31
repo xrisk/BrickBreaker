@@ -1,8 +1,10 @@
 # BrickBreaker
 
-On Java via ACM.
+###On Java via ACM.
 
-To run, double click _dist/BrickBreaker.jar_
++ To compile,  `javac -classpath acm.jar  Main.java BrickBreaker.java`
+
++To run, double click _dist/BrickBreaker.jar_
 
 or `java -jar dist/BrickBreaker.jar`
 
